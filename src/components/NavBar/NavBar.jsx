@@ -17,7 +17,7 @@ const NavBar = () => {
     <Navbar bg="light" expand="lg">
     
     <Container fluid>
-      <Navbar.Brand as={Link} to="/">PokeTCGShop</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/"><img src="./images/logo.png" alt="PokeShopTCG" width='75px'/></Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav

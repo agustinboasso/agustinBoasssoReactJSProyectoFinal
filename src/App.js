@@ -13,13 +13,14 @@ function App() {
       <BrowserRouter>
       
         <NavBar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path="category/:category" element={<ItemListContainer/>}/>
-          <Route path='item/:id' element={<ItemDetailContainer/>} />
-          <Route path="cart" element={<Cart/>}/>
-        
-        </Routes> 
+        <header className="App-header">
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>}/>
+            <Route path="category/:category" element={<ItemListContainer/>}/>
+            <Route path='item/:id' element={<ItemDetailContainer/>} />
+            <Route path="cart" element={<Cart/>}/>
+          </Routes>
+        </header> 
         <div>Este es el footer</div>
           
       </BrowserRouter>

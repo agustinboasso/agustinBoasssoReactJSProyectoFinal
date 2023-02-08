@@ -1,3 +1,4 @@
+import Spinner from 'react-bootstrap/Spinner';
 import { useEffect } from "react";
 
 
@@ -9,9 +10,9 @@ const Loading = () => {
   },[]);
     return (
     
-    //generar un spinner con css o react bootstrap
-
-    <div>Cargando...</div>
+    <Spinner className="spinner" animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
   )
 }
 

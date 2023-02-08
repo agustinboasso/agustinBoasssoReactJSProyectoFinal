@@ -15,14 +15,14 @@ const ItemDetail = ({product}) => {
   
   return (
     <div>
-      <Card style={{ width: '18rem', marginLeft:'750px' }}>
+      <Card style={{ width: '18rem', }}>
         <Card.Img variant="top" src={`/images/${product.imageId}`} alt={product.title} width="200"/>
         <Card.Body>
-          <Card.Title>{product.title}</Card.Title>
-          <Card.Text>
+          <Card.Title style={{color:'black'}} >{product.title}</Card.Title>
+          <Card.Text style={{color:'black'}} >
           
             <h3>{product.description}</h3>
-            <br />
+            
             <h3> Cantidad: {product.stock}</h3>
           </Card.Text>
           <ItemCount 
@@ -31,7 +31,7 @@ const ItemDetail = ({product}) => {
           stock = {product.stock}
           getNumeroCualquiera = {getNumeroCualquiera} //nueva prop para ejecutar funcion que obtiene el numero cualquiera...
           />
-          <Button onClick={() => addItem(product, contador)}>Agregar al carrito</Button>
+          <Button style={{marginLeft: '45px'}} onClick={() => addItem(product, contador)}>Agregar al carrito</Button>
         </Card.Body>
       </Card>
     </div>

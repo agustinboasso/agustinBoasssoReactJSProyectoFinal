@@ -1,3 +1,4 @@
+import swal from 'sweetalert';
 import { useState } from "react";
 import {cartContext} from "./cartContext";
 
@@ -11,7 +12,7 @@ const CartProvider = ({children}) => {
       product.quantity += quantity;
 
       if(product.quantity > product.stock){
-        alert ('No hay stock disponible')
+        swal("No hay stock!","", "warning");
         return;
       }
       
@@ -24,9 +25,11 @@ const CartProvider = ({children}) => {
       name: item.title,
       price: item.price,
       quantity: quantity,
+      description:item.description,
       category: item.categoryId,
       image: item.imageId,
       stock: item.stock,
+
     };
     newCart = [...cart, product]
     console.log(cart)

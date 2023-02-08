@@ -1,3 +1,4 @@
+import swal from 'sweetalert';
 import './ItemCount.css';
 
 
@@ -6,7 +7,12 @@ const ItemCount = ({contador, actualizaValor, stock, getNumeroCualquiera}) => {
   const numeroCualquiera = 10;//
   const onAdd = () => {
     if(stock === contador){
-      alert('No hay stock')
+      swal({
+        title:  "No hay stock",
+        text:   "No tenemos mas unidades disponibles!",
+        icon:   "warning",
+        button: "ok",
+      });
       return;
     }
     actualizaValor(contador + 1);
@@ -14,7 +20,7 @@ const ItemCount = ({contador, actualizaValor, stock, getNumeroCualquiera}) => {
   };
   const restar = () => {
     if(contador === 0){
-      alert('No puedes comprar unidades negativas')
+      swal("", "No puedes comprar unidades negativas!", "error");
       return;
     }
     actualizaValor(contador -1)
@@ -25,7 +31,7 @@ const ItemCount = ({contador, actualizaValor, stock, getNumeroCualquiera}) => {
       <div className="controllers">
         <button onClick={restar}>-</button>
         <div>
-          <span>{contador}</span>
+          <span style={{color:'black'}}>{contador}</span>
         </div>
         <button onClick={onAdd}>+</button>
       </div>
