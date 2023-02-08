@@ -53,55 +53,6 @@ const NavBar = () => {
     </div>
   </Navbar>
     
-    
-    
-    
-    
-    
-    //NavBar anterior
-    
-    /*<div className="navbar">
-        <div>
-            logo
-        </div>
-        <div>
-            <ul className="options">
-                
-                <li>
-                    <NavLink  className={({isActive}) => isActive ? 'active' : 'inactive'} to="/">
-                        Todo
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink  className={({isActive}) => isActive ? 'active' : 'inactive'} to="category/sealed">
-                        Sellado
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink  className={({isActive}) => isActive ? 'active' : 'inactive'}   to="category/baseSet">
-                        Base Set
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink  className={({isActive}) => isActive ? 'active' : 'inactive'} to="/category/jungle">
-                        Jungla
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink  className={({isActive}) => isActive ? 'active' : 'inactive'} to="/category/teamRocket">
-                        Team Rocket
-                    </NavLink>
-                </li>
-                
-            </ul>
-        </div>
-        <div>
-            <Link to="/cart">
-                <CartWidget/>
-            </Link>
-            
-        </div>
-    </div>*/
   )
 };
 

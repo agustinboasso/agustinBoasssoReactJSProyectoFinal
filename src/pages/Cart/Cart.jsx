@@ -154,4 +154,3 @@ const Cart = () => {
 
 export default Cart;
 
-//Clase

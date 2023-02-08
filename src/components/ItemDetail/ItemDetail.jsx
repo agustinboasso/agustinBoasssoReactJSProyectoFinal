@@ -35,30 +35,6 @@ const ItemDetail = ({product}) => {
         </Card.Body>
       </Card>
     </div>
-    
-    
-    
-    
-    
-    
-    /*<div width="200" className="product" >
-        <img src={`/images/${product.imageId}`} alt={product.title} width="200" />
-        <h2>Estos productos estan listos para tu carrito {contador} </h2>
-        <h2>{product.title}</h2>
-        <h3>{product.categoryId}</h3>
-        <h3>{product.description}</h3>
-        <h3> Cantidad: {product.stock}</h3>
-        <ItemCount 
-        contador = {contador} 
-        actualizaValor = {setContador} 
-        stock = {product.stock}
-        getNumeroCualquiera = {getNumeroCualquiera} //nueva prop para ejecutar funcion que obtiene el numero cualquiera...
-        />
-        <div>
-          <button onClick={() => addItem(product, contador)}>Agregar al carrito</button>
-        </div>
-    </div>*/
-    
   )
 }
 

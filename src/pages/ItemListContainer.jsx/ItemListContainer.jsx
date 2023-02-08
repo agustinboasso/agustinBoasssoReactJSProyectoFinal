@@ -25,12 +25,11 @@ const ItemListContainer = () => {
           getDocs(newConfiguration)
           .then((response)=>{
           const data = response.docs.map((doc)=>{
-            
+           
             return {id: doc.id, ...doc.data()};
           })
           setLoading(false);
           setProducts(data);
-
         })
         .catch(error => console.log(error))
         } else {
@@ -42,19 +41,11 @@ const ItemListContainer = () => {
           })
           setLoading(false);
           setProducts(data);
-
         })
         .catch(error => console.log(error))
         }
       },1000);
-      
     };
-
- 
-   
-
-   
-
   useEffect(()=> {
     getProducts();
   },[category]);
@@ -64,14 +55,10 @@ const ItemListContainer = () => {
 
   return (
     <div>
-        
       {loading === true 
         ? <Loading/> 
         : <ItemList productos = {products}/>
- }
-
-       
-       
+      }
     </div>
   )
 };

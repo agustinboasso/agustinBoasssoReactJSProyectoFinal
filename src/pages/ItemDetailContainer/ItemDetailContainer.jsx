@@ -31,7 +31,6 @@ const ItemDetailContainer = () => {
     
  
     <div style={{display:'flex'}}>
-     
       <ItemDetail product = {singleProduct} />
     </div>
   )
