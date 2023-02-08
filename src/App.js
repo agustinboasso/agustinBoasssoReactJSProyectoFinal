@@ -21,7 +21,7 @@ function App() {
             <Route path="cart" element={<Cart/>}/>
           </Routes>
         </header> 
-        <div>Este es el footer</div>
+        <div>FOOTER</div>
           
       </BrowserRouter>
     </CartProvider>
